@@ -1,0 +1,42 @@
+CREATE DATABASE proyecto;
+
+CREATE TABLE `proyecto1`.`usuarios`
+ ( `apellidoM` TEXT NOT NULL ,
+ `apellidoP` TEXT NOT NULL ,
+ `contrasena` INT(20) NOT NULL ,
+ `correo` TEXT NOT NULL ,
+ `idUsuario` INT(11) NOT NULL AUTO_INCREMENT ,
+ `nombre` TEXT NOT NULL ,
+ `sexo` TEXT NOT NULL ,
+ `tipoU` INT(11) NOT NULL ,
+ `acceso` INT(1) NOT NULL ,
+ PRIMARY KEY (`idUsuario`)) ENGINE = InnoDB;
+ 
+ 
+ CREATE TABLE `proyecto1`.`sucursales` 
+ ( `nombre` TEXT NOT NULL ,
+ `idSucursal` INT(11) NOT NULL ,
+ PRIMARY KEY (`idSucursal`)) ENGINE = InnoDB;
+ 
+ CREATE TABLE `proyecto1`.`productos`
+ ( `nombre_prod` VARCHAR(30) NOT NULL ,
+ `descripcion` VARCHAR(100) NOT NULL ,
+ `Precio` DECIMAL NOT NULL ,
+ `fecha_compra` DATE NOT NULL ) ENGINE = InnoDB;
+ 
+ CREATE TABLE `proyecto1`.`categoria`
+ ( `nombre_cat` VARCHAR(30) NOT NULL ,
+ `idCategoria` INT(11) NOT NULL ,
+ PRIMARY KEY (`idCategoria`)) ENGINE = InnoDB;
+ 
+ INSERT INTO `productos`(`descripcion`, `fecha_compra`, `nombre_prod`, `Precio`) VALUES ('".$descripcion."', '".$fechar."', '".$nombre."', '".$precio."')
+ INSERT INTO `usuarios`(`nombre`, `apellidoP`, `apellidoM`, `sexo`, `contrasena`, `correo`, `tipoU`) VALUES ('".$nombre."', '".$ap."', '".$am."', '".$sexo."','".$pass."','".$correo."',".$privilegio.");";
+ SELECT * FROM usuarios WHERE nombre = '".$nombre."' AND contrasena = '".$contra."'";
+ UPDATE `producto` SET `nombre_prod`= ".$nTipo." WHERE `nombre_prod` = ".$actualiza."";
+ DELETE FROM `usuarios` WHERE `idUsuario` = ".$id."";
+ 
+ SELECT * FROM productos";
+ select * from sucursales a, productos b 
+ SELECT * FROM sucursales
+ 
+ 
